@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" version="1.0">
+	<name xml:lang="zh-tw">新同文堂</name>
+	<name xml:lang="en-us">New TongWenTang</name>
+	<description>中文繁簡轉換</description>
+	<author href="http://tongwen.openfoundry.org/" email="softcup@gmail.com">softcup</author>
+	<icon src="icons/icon-64.png"/>
+</widget>

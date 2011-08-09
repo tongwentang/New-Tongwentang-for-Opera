@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>新同文堂</title>
+	<meta charset="UTF-8">
+	<script type="text/javascript">
+		var conList = [];
+		window.addEventListener("load", function TongWenInit(){
+			var theButton;
+			var ToolbarUIItemProperties = {
+					disabled: false,
+					title: '新同文堂',
+					icon: './icons/icon-16.png',
+					onclick: function () {
+						var tab = opera.extension.tabs.getFocused();
+						tab.postMessage("btnAuto");
+						// tab.broadcastMessage("Click");
+						// opera.extension.broadcastMessage("Click");
+						
+						//opera.postError(conList.length);
+						//for (var i = conList.length - 1; i >= 0; i--) {
+						//	try {
+						//		conList[i].postMessage("Click");
+						//	} catch(ex) {
+						//	}
+						//}
+						
+					}/*,
+					popup: {
+						href: 'popup.html',
+						width: 200,
+						height: 70
+					}*/
+				}
+			theButton = opera.contexts.toolbar.createItem(ToolbarUIItemProperties);
+			opera.contexts.toolbar.addItem(theButton);
+
+				/*
+			opera.extension.onconnect = function(event) {
+				conList.push(event.source);
+
+				target = event.source;
+				event.source.postMessage("something");
+				opera.postError(typeof event.source);
+				var tab = opera.extension.tabs.getFocused();
+				opera.postError(typeof tab);
+				tab.postMessage("tab get it.");
+			};
+				*/
+
+			opera.extension.onmessage = function(event) {
+				// opera.postError("get it");
+				/*
+			  // Get content of incoming message.
+			  var message  = event.data;
+			  opera.postError("Background process sent: " + message);
+
+			  //  Replies back to background script.
+			  var reply = "Background process's message only had " + (message ? message.length : 0) + " characters.";
+			  event.source.postMessage(reply);
+				 */
+			};
+		}, false );
+
+		opera.extension.addEventListener("connect", function(event) {
+			// conList.push(event.source);
+			// window.opera.postError('Connected. Event source: ' + event.source);
+		}, false);
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
