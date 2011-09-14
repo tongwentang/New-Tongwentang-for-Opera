@@ -1,11 +1,11 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<title>新同文堂</title>
-	<meta charset="UTF-8">
+	<meta charset="utf-8">
 	<script type="text/javascript">
 		var conList = [];
-		window.addEventListener("load", function TongWenInit(){
+		window.addEventListener("load", function TongWenInit() {
 			var theButton;
 			var ToolbarUIItemProperties = {
 					disabled: false,
@@ -13,7 +13,7 @@
 					icon: './icons/icon-16.png',
 					onclick: function () {
 						var tab = opera.extension.tabs.getFocused();
-						tab.postMessage("btnAuto");
+						// tab.postMessage("btnAuto");
 						// tab.broadcastMessage("Click");
 						// opera.extension.broadcastMessage("Click");
 						
