@@ -1,15 +1,22 @@
 opera.extension.onmessage = function(event) {
 	switch (event.data) {
 		case "btnAuto":
-			opera.postError("btnAuto");
-			top.postMessage("btnAuto");
+			TongWen.transAuto(window.top.document);
+			break;
+
+		case "btnTrad":
+			TongWen.trans2Trad(window.top.document);
+			break;
+
+		case "btnSimp":
+			TongWen.trans2Simp(window.top.document);
 			break;
 
 		case "doAuto":
-			// TongWen.trans2Simp();
-			//TongWen.transAuto(window.top.document);
 			opera.postError("doAuto");
-			TongWen.transAuto(document);
+			// TongWen.trans2Simp();
+			TongWen.transAuto(window.top.document);
+			// TongWen.transAuto(document);
 			break;
 	}
 	// alert(opera.extension.window);
@@ -21,5 +28,5 @@ opera.extension.onmessage = function(event) {
   //  Replies back to background script.
   var reply = "Background process's message only had " + (message ? message.length : 0) + " characters.";
   event.source.postMessage(reply);
-	 */ 
+	 */
 };

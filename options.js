@@ -162,10 +162,7 @@ function saveOptions() {
 	// 回存
 	localStorage["tongwen"] = JSON.stringify(tongwen);
 
-	alert(opera.extension);
-	// var bgPage = chrome.extension.getBackgroundPage();
-	// bgPage.reloadConfig();
-	// bgPage.iconActionStat();
+	opera.extension.postMessage('ReloadConfig');
 
 	// 顯示訊息
 	if (typeof timer == "number") clearTimeout(timer);
