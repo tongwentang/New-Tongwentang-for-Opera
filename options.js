@@ -161,8 +161,7 @@ function saveOptions() {
 
 	// 回存
 	localStorage["tongwen"] = JSON.stringify(tongwen);
-
-	opera.extension.postMessage('ReloadConfig');
+	opera.extension.bgProcess.reloadConfig();
 
 	// 顯示訊息
 	if (typeof timer == "number") clearTimeout(timer);
@@ -558,7 +557,7 @@ $(function () {
 		$('body').hide();
 		return false;
 	}
-	
+
 	loadLang();
 
 	restoreOptions();
