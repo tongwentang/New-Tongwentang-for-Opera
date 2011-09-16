@@ -119,7 +119,7 @@ function contextMenuAction() {
 function saveOptions() {
 	tongwen.iconAction  = $("input[name=iconAction]:checked").val();
 	tongwen.autoConvert = $("input[name=autoConvert]:checked").val();
-	tongwen.symConvert  = $("#symbolEnable").get(0).checked;
+	tongwen.symConvert  = ($("#symbolEnable").length > 0) ? $("#symbolEnable").get(0).checked : false;
 	// 網址轉換規則
 	tongwen.urlFilter = {
 		"enable": $("#enableUrlFilter").attr("checked"),
@@ -565,17 +565,17 @@ $(function () {
 	uiUserPhrase();
 
 	btnList = {};
-	btnList[messages.btnClose]  = function () {
-		window.close();
-	};
-	btnList[messages.btnSave]   = function () {
-		saveOptions();
+	btnList[messages.btnExportOptions] = function () {
+		ExportOptions(messages.dlgExportOption, tongwen, "all");
 	};
 	btnList[messages.btnImportOptions] = function () {
 		ImportOptions(messages.dlgImportOption, "all");
 	};
-	btnList[messages.btnExportOptions] = function () {
-		ExportOptions(messages.dlgExportOption, tongwen, "all");
+	btnList[messages.btnSave]   = function () {
+		saveOptions();
+	};
+	btnList[messages.btnClose]  = function () {
+		window.close();
 	};
 
 	$("#tongwenWrap").dialog({
