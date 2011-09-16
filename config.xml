@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<widget xmlns="http://www.w3.org/ns/widgets" id="http://tongwen.openfoundry.org/" version="0.2">
+<widget xmlns="http://www.w3.org/ns/widgets" defaultlocale="en" version="0.2">
+	<!-- name -->
 	<name xml:lang="en">New TongWenTang</name>
 	<name xml:lang="zh-tw">新同文堂</name>
 	<name xml:lang="zh-cn">新同文堂</name>
+	<!-- description -->
 	<description xml:lang="en">Switch display Chinese content between traditional and simplified glyphs</description>
 	<description xml:lang="zh-tw">中文繁簡轉換</description>
 	<description xml:lang="zh-cn">中文繁简转换</description>
+
 	<author href="http://tongwen.openfoundry.org/" email="softcup@gmail.com">softcup</author>
 	<icon src="icons/icon-64.png"/>
 </widget>
