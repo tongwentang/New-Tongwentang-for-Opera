@@ -36,6 +36,26 @@
 			}
 		}
 
+		function docLoaded(tab, uri) {
+			// 自動轉換
+			var zhflag = '';
+			if (tongwen.urlFilter.enable) {
+				// zhflag = urlFilterAction(uri);
+			}
+			if (zhflag === '') zhflag = tongwen.autoConvert;
+
+			// 轉換標點符號
+			if (tongwen.symConvert) {
+			}
+			
+			opera.postError(zhflag);
+			switch (zhflag) {
+				case 'trad': tab.postMessage("btnTrad"); break;
+				case 'simp': tab.postMessage("btnSimp"); break;
+				default:
+			}
+		}
+
 		var conList = [];
 		window.addEventListener("load", function TongWenInit() {
 			var btnTongwen = null, uiToolbarProperties = null;
@@ -56,11 +76,11 @@
 			opera.contexts.toolbar.addItem(btnTongwen);
 
 			opera.extension.onmessage = function(event) {
+				// opera.postError(event.origin);
 				switch (event.data) {
-					case 'ReloadConfig':
-						reloadConfig();
-						break;
-					default:
+					case 'Loaded':
+						docLoaded(event.source, event.origin);
+					break;
 				}
 			};
 		}, false );
