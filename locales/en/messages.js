@@ -45,15 +45,15 @@ var messages = {
 	'msgUrlFilter'              : 'You can use wildcard (*) in an URL.',
 
 	'labelNoTranslate'          : 'Do not convert',
-	'labelToTraditional'        : 'Convert to Traditional',
-	'labelToSimplified'         : 'Convert to Simplified',
+	'labelToTraditional'        : 'to Traditional',
+	'labelToSimplified'         : 'to Simplified',
 	'labelReplaceOption'        : 'Override options',
 	'labelTraditional'          : 'Traditional',
 	'labelSimplified'           : 'Simplified',
 	'labelTraditionalColon'     : 'Traditional: ',
 	'labelSimplifiedColon'      : 'Simplified: ',
 
-	'labelAutoConvert'          : 'AptoConversion Settings',
+	'labelAutoConvert'          : 'AutoConversion Settings',
 	'labelAutoConvertNone'      : 'Disable AutoConversion',
 	'labelAutoConvertTrad'      : 'Convert to Traditional (Simplified-to-Traditional) automatically',
 	'labelAutoConvertSimp'      : 'Convert to Simplified (Traditional-to-Simplified) automatically',
