@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<widget xmlns="http://www.w3.org/ns/widgets" defaultlocale="en" version="0.2">
+<widget xmlns="http://www.w3.org/ns/widgets" id="http://tongwen.openfoundry.org" defaultlocale="zh-tw" version="0.3">
 	<!-- name -->
-	<name xml:lang="en">New TongWenTang</name>
+	<name xml:lang="en">New Tong Wen Tang</name>
 	<name xml:lang="zh-tw">新同文堂</name>
 	<name xml:lang="zh-cn">新同文堂</name>
 	<!-- description -->
