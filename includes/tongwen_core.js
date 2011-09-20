@@ -335,6 +335,8 @@ TongWen = (function () {
 									default:
 								}
 								break;
+							case "textarea":
+								break;
 							case "option":
 								if (node.text.length > 0) {
 									node.text = convert(node.text, zhflag);
