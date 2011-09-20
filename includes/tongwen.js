@@ -10,6 +10,7 @@ window.addEventListener('DOMContentLoaded', function(event) {
 			TongWen.addT2STable(data.tongwen.symbolT2S);
 			TongWen.addS2TTable(data.tongwen.symbolS2T);
 		}
+
 		// do action
 		switch (data.act) {
 			case "btnAuto":
@@ -25,6 +26,6 @@ window.addEventListener('DOMContentLoaded', function(event) {
 				break;
 		}
 	};
-	
+
 	opera.extension.postMessage('docLoaded');
 }, false);
