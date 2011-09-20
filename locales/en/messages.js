@@ -1,3 +1,4 @@
+// Thanks jedi (http://jedi.org/blog/)
 var messages = {
 	'title'                     : 'New Tong Wen Tang',
 	'optionTitle'               : 'New Tong Wen Tang - Options',
