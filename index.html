@@ -14,7 +14,14 @@
 			} else {
 				oTongwen = JSON.parse(localStorage["tongwen"]);
 				for (var i in oTongwen) {
-					if (i == "version") continue;
+					if (i == "version") {
+						if (parseFloat(oTongwen[i]) < 0.4) {
+							oTongwen.fontCustom.enable = tongwen.fontCustom.enable;
+							oTongwen.fontCustom.trad = tongwen.fontCustom.trad;
+							oTongwen.fontCustom.simp = tongwen.fontCustom.simp;
+						}
+						continue;
+					}
 					tongwen[i] = oTongwen[i];
 				}
 				if (typeof tongwen.userPhrase["enable"] === "undefined") {
