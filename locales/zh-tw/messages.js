@@ -42,7 +42,8 @@ var messages = {
 	'msgPhraseNotEmpty'         : '要轉換的字串不得為空白，請填寫！',
 	'msgFrameNotConvert'        : '某些網頁的頁框會無法正常轉換。',
 	'msgUrlFilter'              : '可在網址內使用萬用字元 (*)',
-	'msgInputConvert'           : '要轉換時，請先讓游標停留在輸入區內，再點選工具列上的圖示',
+	'msgInputConvert1'          : '要轉換時，請先讓游標停留在輸入區內，再點選工具列上的圖示',
+	'msgInputConvert2'          : '不支援「所見即所得」輸入區內的文字轉換',
 
 	'labelNoTranslate'          : '不轉換',
 	'labelToTraditional'        : '轉 繁體',

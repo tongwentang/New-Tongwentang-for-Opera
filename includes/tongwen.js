@@ -33,6 +33,8 @@ window.addEventListener('DOMContentLoaded', function(event) {
 				(document.activeElement.type.toLowerCase() === 'text')
 			) {
 				isInput = true;
+			} else if (document.activeElement.isContentEditable) {
+				isInput = false;
 			}
 		}
 		

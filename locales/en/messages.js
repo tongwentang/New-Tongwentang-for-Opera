@@ -43,7 +43,8 @@ var messages = {
 	'msgPhraseNotEmpty'         : 'Phrase can not be empty. Please enter a phrase to convert!',
 	'msgFrameNotConvert'        : 'Some frames of websites can not be converted normally.',
 	'msgUrlFilter'              : 'You can use wildcard (*) in an URL.',
-	'msgInputConvert'           : '要轉換時，請先點選要轉換的輸入框，再點選工具列上的圖示',
+	'msgInputConvert1'          : '要轉換時，請先點選要轉換的輸入框，再點選工具列上的圖示',
+	'msgInputConvert2'          : '不支援 "WYSIWYG" 輸入區內的文字轉換',
 
 	'labelNoTranslate'          : 'Do not convert',
 	'labelToTraditional'        : 'to Traditional',
