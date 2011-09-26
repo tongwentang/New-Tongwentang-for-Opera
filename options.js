@@ -6,8 +6,7 @@ var flagmap    = {
 	"trad" : messages.labelToTraditional,
 	"simp" : messages.labelToSimplified
 };
-// var StoreUri = "http://127.0.0.1:8080";
-var StoreUri = "http://tongwenapp.appspot.com/";
+// var StoreUri = "http://tongwenapp.appspot.com/";
 var btnList = null;
 
 // ----------------------------------------------------------------------
