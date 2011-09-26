@@ -558,7 +558,7 @@ function loadLang() {
 		var atr = '';
 		atr = $(this).text();
 		if (messages.hasOwnProperty(atr)) {
-			$(this).text(messages[atr]);
+			$(this).html(messages[atr]);
 		}
 	});
 }

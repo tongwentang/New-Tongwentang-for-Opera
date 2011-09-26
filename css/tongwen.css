@@ -44,3 +44,5 @@ fieldset div { padding-left: 10px; }
 #msgContent { font-size: 14px; }
 
 #tongwenOptions { width: 100%; height: 200px; }
+
+#tabsGeneral fieldset div label { display: inline-table; }
