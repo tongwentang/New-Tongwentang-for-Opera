@@ -42,7 +42,7 @@ var messages = {
 	'msgPhraseNotEmpty'         : '要转换的字串不得为空白，请填写！',
 	'msgFrameNotConvert'        : '某些网页的页框会无法正常转换。',
 	'msgUrlFilter'              : '可在网址内使用万用字元 (*)',
-	'msgInputConvert1'          : '要转换时，请先让鼠标停留在输入区内，再点选工具列上的图示',
+	'msgInputConvert1'          : '要转换时，请先让鼠标停留在输入区内，再点选工具列上的图标',
 	'msgInputConvert2'          : '不支援「所见即所得」输入区内的文字转换',
 
 	'labelNoTranslate'          : '不转换',
@@ -59,7 +59,7 @@ var messages = {
 	'labelAutoConvertTrad'      : '自动转为 繁体 (简 > 繁)',
 	'labelAutoConvertSimp'      : '自动转为 简体 (繁 > 简)',
 
-	'labelIconAction'           : '图示转换设定',
+	'labelIconAction'           : '图标转换设定',
 	'labelIconActionAuto'       : '自动侦测转换 (简 > 繁、繁 > 简)',
 	'labelIconActionTrad'       : '转为 繁体 (简 > 繁)',
 	'labelIconActionSimp'       : '转为 简体 (繁 > 简)',
