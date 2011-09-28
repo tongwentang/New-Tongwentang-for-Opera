@@ -336,6 +336,7 @@ TongWen = (function () {
 								}
 								break;
 							case "textarea":
+								treeWalker.nextNode();
 								break;
 							case "option":
 								if (node.text.length > 0) {
